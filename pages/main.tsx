@@ -25,7 +25,7 @@ function Main() {
   useEffect(() => {
     console.log(submitData);
     if (submitData) {
-      fetch("http://localhost:8080/getBooks", {
+      fetch("https://jade-fierce-rabbit.cyclic.app/getBooks", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
