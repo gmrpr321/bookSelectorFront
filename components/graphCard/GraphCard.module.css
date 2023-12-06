@@ -1,0 +1,20 @@
+.graphCard {
+  width: 60%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #bb3838;
+  background-color: #b8e1e2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 700px) {
+  .canva {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.canva {
+}
