@@ -1,7 +1,15 @@
 import classes from "./GraphCard.module.css";
 import Chart from "chart.js/auto";
 import React, { useEffect, useRef } from "react";
-export default function GraphCard({ studentVector, bookVector, bookNames }) {
+interface GraphCardProps {
+  studentVector: number[];
+  bookVector: number[][];
+  bookNames: string[];
+}
+export default function GraphCard(props: GraphCardProps) {
+  const studentVector = props.studentVector;
+  const bookVector = props.bookVector;
+  const bookNames = props.bookNames;
   const chartRef = useRef(null);
   const bookColors = ["red", "blue", "green", "pink", "yellow"];
   const books = bookVector.map((value, index) => {
