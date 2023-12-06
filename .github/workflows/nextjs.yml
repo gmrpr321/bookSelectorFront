@@ -79,7 +79,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           path: ./.next
-          name: next-build
 
   # Deployment job
   deploy:
@@ -92,5 +91,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-
-
