@@ -9,7 +9,7 @@ export default function ResultCard(props: ResultCardProps) {
       <p>Books that matches your Preference, Ranked</p>
       {props.bookNames.map((value, index) => {
         return (
-          <div>
+          <div key={index}>
             <p>{value}</p>
           </div>
         );
