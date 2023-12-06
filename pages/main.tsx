@@ -53,6 +53,7 @@ function Main() {
               {genreTitles.map((value, index) => {
                 return (
                   <button
+                    key={index}
                     className={classes.genreButton}
                     type="button"
                     style={{
